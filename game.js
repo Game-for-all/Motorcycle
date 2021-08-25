@@ -131,11 +131,11 @@ var objects = [];
 
 var roads = 
 [
-	new Road("https://cdn.discordapp.com/attachments/707267975320961105/879959854024904714/road.jpg", 0),
-	new Road("https://cdn.discordapp.com/attachments/707267975320961105/879959854024904714/road.jpg", canvas.width)
+	new Road("image/road.jpg", 0),
+	new Road("image/road.jpg", canvas.width)
 ]; //Backgrounds
 
-var player = new Boy("https://cdn.discordapp.com/attachments/707267975320961105/879959836081655838/Motorcycle.png", canvas.width / 2, canvas.height / 2, true); 
+var player = new Boy("image/Motorcycle.png", canvas.width / 2, canvas.height / 2, true); 
 
 
 var speed = 5;
@@ -165,7 +165,7 @@ function Update()
 
 	if(RandomInteger(0, 10000) > 9700) 
 	{
-		objects.push(new Boy("https://cdn.discordapp.com/attachments/707267975320961105/879959806956408873/car.png", RandomInteger(30, canvas.width - 50), RandomInteger(250, 400) * -1, false));
+		objects.push(new Boy("image/car.png", RandomInteger(30, canvas.width - 50), RandomInteger(250, 400) * -1, false));
 	}
 
 	player.Update();
